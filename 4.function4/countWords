@@ -1,0 +1,11 @@
+function countWords(message){
+  // wirte your code here
+	//	去掉message中的,和.
+	message = message.replace(',','');
+	message = message.replace('.','');
+	//  将message按空格划分为字符串数组
+	var strArr = message.split(' ');
+  	return strArr.length;
+}
+
+console.log(countWords('Good morning, I love JavaScript.')); // should return 5
